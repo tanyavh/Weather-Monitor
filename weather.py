@@ -1,3 +1,4 @@
+#use this script to test your api key 
 
 import requests
 
