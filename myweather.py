@@ -4,10 +4,9 @@ import tkinter as tk
 
 
 # ===== BASIC CONFIGURATION =====
-API_KEY = 'api_key'
-CITY = 'city'
+API_KEY = 'api_key' #input your own api key
+CITY = 'city'  #input the city name you wish to monitor the weather for 
 UNITS = 'metric'
-CHECK_INTERVAL_MINUTES = 60
 
 # ===== ANOMALY CONDITIONS =====
 ANOMALY_PARAMS = {
@@ -121,8 +120,7 @@ def monitor_weather():
         else:
             result = f"\n📍 Weather check for {CITY}\n" + "\nAll weather parameters are within normal range."
             show_popup("Here comes nothing...", result)
-    except Exception as e:
-        result = f"Error: {e}"
 
 if __name__ == "__main__":
     monitor_weather()
+    
